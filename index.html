@@ -1,40 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>AquaSteps</title>
-    <link rel="stylesheet" href="css/Estilos%20(1).css">
-        
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio | AquaSteps</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" type="image/svg+xml" href="iconos/favicon.svg">
 </head>
 <body>
-
-    <h1>AquaSteps</h1>
-    <div class = "contenido">
-        <div class = "caja">
-            ¡ALERTA!
-        </div>
-        <div class = "caja">
-            La fecha de hoy es: <span id="fecha-actual"></span>
-        </div>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="cabecera">
+  <div class="contenedor barra">
+    <a class="marca" href="index.html"><img src="iconos/favicon.svg" alt="" width="42" height="42">AquaSteps</a>
+    <nav aria-label="Navegación principal">
+      <ul class="menu">
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li>
+          <details class="desplegable">
+            <summary>Consultar</summary>
+            <ul class="submenu">
+              <li><a href="alertas.html">Alertas</a></li>
+              <li><a href="perdidas.html">Pérdidas de agua</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="contenido">
+  <section id="inicio" class="hero contenedor dos-columnas" aria-labelledby="titulo">
+    <div>
+      <p class="etiqueta">Control del agua</p>
+      <h1 id="titulo">AquaSteps</h1>
+      <div class="alerta" role="alert">¡ALERTA!</div>
+      <div class="fecha avisos">La fecha de hoy es: <span id="fecha-actual"></span></div>
     </div>
-
-     <div class = "contenido1">
-
-        <div class = "caja1">
-            <a href="alertas.html">VER ALERTAS</a>
-            <img src="image/gota_ofertas.svg" alt="IMAGEN PRO GAMER" class="imagen">
-        </div>
-
+    <figure class="postal"><img class="ilustracion" src="imagenes/gota.svg" alt="Ilustración de una gota de agua" width="400" height="300"></figure>
+  </section>
+  <section class="seccion fondo">
+    <div class="contenedor dos-columnas">
+      <article class="tarjeta acceso">
+        <a class="boton" href="alertas.html">Ver alertas</a>
+        <img src="iconos/gota.svg" alt="" width="48" height="48">
+      </article>
+      <article class="tarjeta acceso">
+        <a class="boton" href="perdidas.html">Ver pérdidas de agua</a>
+        <img src="iconos/gota.svg" alt="" width="48" height="48">
+      </article>
     </div>
-    <img src="image/imagen_GRANDE.svg" alt="IMAGEN PRO GAMER" class="imagen2">
-     <div class = "contenido2">
-        <div class = "caja2">
-            <a href="perdidas.html">vER PERDIDAS DE AGUA</a>
-            <img src="image/gota_perdidas.svg" alt="IMAGEN PRO GAMER" class="imagen">
-        </div>
-    </div>
-    <script src="js/script.js"></script>
+  </section>
+</main>
+<footer class="pie">
+  <div class="contenedor">
+    <p><strong>AquaSteps</strong> · Monitoreo de alertas y pérdidas de agua</p>
+    <nav class="redes" aria-label="Redes sociales de referencia">
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="iconos/facebook.svg" alt="" width="24" height="24">Facebook</a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="iconos/instagram.svg" alt="" width="24" height="24">Instagram</a>
+      <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img src="iconos/youtube.svg" alt="" width="24" height="24">YouTube</a>
+    </nav>
+    <p>© 2026 AquaSteps · <a href="FUENTES.txt">Créditos de recursos</a></p>
+  </div>
+</footer>
+<script src="js/script.js"></script>
 </body>
 </html>
