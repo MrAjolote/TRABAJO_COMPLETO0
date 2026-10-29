@@ -119,3 +119,30 @@ td{
     text-transform: uppercase;
     margin-bottom: 10px;
 }
+
+@media{max-width: 768px}{
+    h1,h2{
+        font-size: 50px;
+    }
+    .contenido1{
+        margin:10px auto;
+    }
+    .caja {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    .contenido2{
+        margin:10px auto;
+    }
+    .caja1 {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    .caja2 {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+
+
+}
